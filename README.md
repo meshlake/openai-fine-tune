@@ -10,10 +10,9 @@
 
 ## 实验
 
+目前，微调功能仅适用于以下基础模型：`davinci`、`curie`、`babbage` 和 `ada`。这些是原始模型，没有任何训练后的指令（例如`text-davinci-003`）。这些基础模型中质量最好的为 `davinci`，因此一下实验训练基础模型均为`davinci`。
 
-> 目前，微调功能仅适用于以下基础模型：`davinci`、`curie`、`babbage` 和 `ada`。这些是原始模型，没有任何训练后的指令（例如`text-davinci-003`）。这些基础模型中质量最好的为 `davinci`，因此一下实验训练基础模型均为`davinci`。
-
-> 训练数据集为某业务库中的 11 张业务表的表结构信息。
+训练数据集为某业务库中的 11 张业务表的表结构信息。
 
 ### 实验一
 
@@ -173,4 +172,4 @@ response = openai.Completion.create(
 
 ## 疑问
 
-- fine-tune 的数据集应该如何准备？
+1. fine-tune 的数据集应该如何准备？
